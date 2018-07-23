@@ -55,8 +55,10 @@
         <ul class="nav-menu list-unstyled">
           <li><a href="#header" class="smoothScroll">Home</a></li>
           <li><a href="#about" class="smoothScroll">About</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#projects" class="smoothScroll">Projects</a></li>
+          <!--
           <li><a href="#journal" class="smoothScroll">Blog</a></li>
+        -->
           <li><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
 
@@ -108,7 +110,7 @@
 
             <p class="p-heading">ABOUT ME</p>
             
-            <p class="separator">I'm a new grad that graduated from the University of Toronto with a computer science degree. I have always been interested in technology and decided to pursue it as a career when I was young. I have worked in the industry as a full stack developer, participated in hackathons, and worked on a few projects during my free time. My other interests include tennis, biking, basketball, and ultimate Frisbee.</p>
+            <p class="separator">I'm a new grad that graduated from the University of Toronto with a computer science degree. I have always been interested in technology and decided to pursue it as a career when I was young. I have worked in the industry as a developer, participated in hackathons, and worked on a few projects during my free time. My other interests include tennis, biking, basketball, and ultimate Frisbee.</p>
             
           </div>
 
@@ -116,10 +118,73 @@
       </div>
     </div>
   </div>
+
+  <div id="projects">
+  <div id="about" class="paddsection">
+    <div class="container">
+      <p class="main-heading">PROJECTS</p>
+    </div>
+    <br>
+    <br>
+    <div class="container padding-bot">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg-clean">
+            <div class="about-img-clean">
+              <img src="images/whattheflop.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">WHATTHEFLOP</p>
+            
+            <p class="separator">An event planning web application that uses the Google Place and Google Calendar API to provide a platform for easy coordinating, user profiles, displaying previously attended event, and the option to link events to a calendar. The goal of this application was to allow a group of friends to quickly decide on an activty.<br>Technologies Used: React, flask, Google APIs, Long pulling<br>
+            <a target="_blank" href="https://github.com/ronnh/cutesillyboys">GITHUB</a>
+            </p>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container padding-bot">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg-clean">
+            <div class="about-img-clean">
+              <img src="images/censor_me.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">CENSOR ME</p>
+            
+            <p class="separator">A chrome extension used to filter out unwanted concepts and text using the HPE Haven API. The goal is to improve user experience on the web, by enabling anybody to block out unwanted content from webpages. We strived to be able to not only censor out words, but to be able to detect unwanted concepts as well.<br>Technologies Used: Node.JS, Javascript, HPE Haven, Cortical API<br>
+            <a target="_blank" href="https://github.com/jstarw/CensorMe">GITHUB</a>
+            </p>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- end section about us -->
 
 
   <!-- start section services -->
+  <!--
   <div id="services">
     <div class="container">
 
@@ -178,10 +243,12 @@
     </div>
 
   </div>
+-->
   <!-- end section services -->
 
 
   <!-- start section portfolio -->
+  <!--
   <div id="portfolio" class="text-center paddsection">
 
     <div class="container">
@@ -251,10 +318,12 @@
     </div>
 
   </div>
+-->
   <!-- End section portfolio -->
 
 
   <!-- start section journal -->
+  <!--
   <div id="journal" class="text-left paddsection">
 
     <div class="container">
@@ -320,82 +389,50 @@
     </div>
 
   </div>
+-->
   <!-- End section journal -->
 
 
   <!-- start sectoion contact -->
+  
   <div id="contact" class="paddsection">
+    <div class="container">
+      <p class="main-heading">CONTACT</p>
+    </div>
     <div class="container">
       <div class="contact-block1">
         <div class="row">
 
-          <div class="col-lg-6">
-            <div class="contact-contact">
-
-              <h2 class="mb-30">GET IN TOUCH</h2>
-
-              <ul class="contact-details">
-                <li><span>23 Main, Street</span></li>
-                <li><span>New York, United States</span></li>
-                <li><span>+88 01912704287</span></li>
-                <li><span>example@example.com</span></li>
-              </ul>
-
-            </div>
+          <div class="col-lg-4">
+            <a target="_blank" href="files/Ronnie_Huang_Resume.pdf">
+              <img src="images/resume-icon.png"><br>
+              Resume
+            </a>
           </div>
 
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
+          <div class="col-lg-4">
+            <a target="_blank" href="https://github.com/ronnh">
+              <img src="images/github-icon.png"><br>
+              Github
+            </a>
+          </div>
 
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-
-              </div>
-            </form>
+          <div class="col-lg-4">
+            <a href="mailto:ronnie.huang@hotmail.ca">
+              <img src="images/envelope.png"><br>Send E-Mail</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- start sectoion contact -->
 
 
   <!-- start section footer -->
   <div id="footer" class="text-center">
     <div class="container">
+      <!--
       <div class="socials-media text-center">
 
         <ul class="list-unstyled">
@@ -407,7 +444,7 @@
           <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
         </ul>
 
-      </div>
+      </div>-->
 
       <p>&copy; Copyrights Folio. All rights reserved.</p>
 
@@ -419,6 +456,8 @@
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
         -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <br>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       </div>
 
     </div>
