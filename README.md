@@ -1,101 +1,96 @@
-# Ceevee Theme for Grav
+# Helium Jekyll
+## A new Bootstrap 4 theme
 
-![Ceevee](assets/readme_1.png)
+## The project is no longer mantained
 
-[Ceevee](http://www.styleshout.com/free-templates/ceevee/) is a clean, modern, fully responsive site template for your resume and portfolio. With this template, you can easily introduce yourself and showcase your works to future clients and employers. Also, it is flexible and easy to customize so you even use this template as a creative, business or portfolio site for your company.
+<a href="https://jekyll-themes.com">
+    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
+</a>
 
-# Features:
+Helium is a fast, modern and configurable [Jekyll](http://jekyllrb.com/) theme with some tricks up it's sleeve. It has a live theme switcher and it's main blog layout display prominent hero images for posts with colored overlays and nice animations.
 
-* HTML5 and CSS3
-* Fully Responsive
-* Clean and modern design
-* Various templates for presenting your content
-* Fontawesome icon font
-* @font-face custom web fonts
-* jQuery enhanced
-* Flexslider
-* Magnific popup lightbox
-* Smooth scrolling effect
-* Cross browser compatible
-* Twitter integration
+[Bootstrap theme source](https://uideck.com/products/helium-ui-kit/)
 
-# Installation
+![helium sample](https://raw.githubusercontent.com/heliumjk/heliumjk.github.io/master/assets/images/helium-screenshot.jpg)
+![helium theme](https://raw.githubusercontent.com/heliumjk/heliumjk.github.io/master/assets/images/helium-screenshot1.jpg)
 
-Installing the Ceevee theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
+## Features
+Though minimalistic-looking by nature, dactl is easily configurable and includes quite a lot of niceties:
 
-The theme by itself is useful, but you may have an easier time getting up and running by installing a skeleton. The [Ceevee Site Skeleton](https://github.com/getgrav/grav-skeleton-ceevee-site) is a self-contained repository for a complete sites which includes: sample content, configuration, theme, and plugins.
+Main features:
+* [Bootstrap 4](https://v4-alpha.getbootstrap.com/)
+* [Font Awesome](http://fontawesome.io/)
+* 100+ UI Blocks
+* Responsive design
 
-## GPM Installation (Preferred)
+Jekyll-specific features:
+* Fully compatible with Jekyll 3.x and GitHub Pages
+* SEO optimized
+* [Google Analytics](https://www.google.com/analytics/) support
+* [Google AdSense](https://www.google.com/adsense/start/) support
+* [Disqus](https://disqus.com/) comments support
 
-The simplest way to install this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
+Other features:
+* Blog page
+* Landing page samples
+* Tags functionality and tags pages
+* Link posts functionality
+* Mobile slider scrolling
+* Emoji support ⚡️⚡️⚡️ by copy paste from [getemoji](http://getemoji.com/)
 
-    bin/gpm install ceevee
+Some of the features listed above can be easily configured or disabled by you.
 
-This will install the Ceevee theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/ceevee`.
+## Information about Helium
+At it's core, dactl is a forked version of [sentenza](https://github.com/sentenza/jekyll-material-design) but it has been almost entirely rewritten from scratch.  
+I have just started my journey in the world of web development, learning new things on the way.  
+Looking for a way to put my newly acquired skills to test I found Jekyll and I quickly realized that it's going to be a good learning experience since I don't like building 'dummy' projects.  
+I've built this theme as a way to develop my skills further.
 
-## Manual Installation
+You can find credits at the bottom of this Readme file.  
+**All** feedback is welcome, both positive and negative.
 
-To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `ceevee`. You can find these files either on [GitHub](https://github.com/getgrav/grav-theme-ceevee) or via [GetGrav.org](http://getgrav.org/downloads/themes).
+## Installation
+### Running locally
+Assuming you've got Jekyll [installed](https://jekyllrb.com/docs/installation/), clone or download this repo, `cd` to wherever you've put `helium` folder and run `jekyll -s'`
 
-You should now have all the theme files under
-
-    /your/site/grav/user/themes/ceevee
-
->> NOTE: This theme is a modular component for Grav which requires the [Grav](http://github.com/getgrav/grav), [Error](https://github.com/getgrav/grav-theme-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) plugins.
-
-# Updating
-
-As development for the Ceevee theme continues, new versions may become available that add additional features and functionality, improve compatibility with newer Grav releases, and generally provide a better user experience. Updating Ceevee is easy, and can be done through Grav's GPM system, as well as manually.
-
-## GPM Update (Preferred)
-
-The simplest way to update this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm). You can do this with this by navigating to the root directory of your Grav install using your system's Terminal (also called command line) and typing the following:
-
-    bin/gpm update ceevee
-
-This command will check your Grav install to see if your Ceevee theme is due for an update. If a newer release is found, you will be asked whether or not you wish to update. To continue, type `y` and hit enter. The theme will automatically update and clear Grav's cache.
-
-## Manual Update
-
-Manually updating Ceevee is pretty simple. Here is what you will need to do to get this done:
-
-* Delete the `your/site/user/themes/ceevee` directory.
-* Download the new version of the Ceevee theme from either [GitHub](https://github.com/getgrav/grav-theme-ceevee) or [GetGrav.org](http://getgrav.org/downloads/themes).
-* Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `ceevee`.
-* Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
-
-> Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in `user/config/themes`) will remain intact.
-
-# Setup
-
-If you want to set Ceevee as the default theme, you can do so by following these steps:
-
-* Navigate to `/your/site/grav/user/config`.
-* Open the **system.yaml** file.
-* Change the `theme:` setting to `theme: ceevee`.
-* Save your changes.
-* Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
-
-Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **ceevee** folder.
+### Hosting on GitHub
+Fork this repo and rename it to `yourusername.github.io`... and edit the `_config.yaml` file whit your github address and your links (such as social media username, email, name, ecc.)!  
+Your new helium-themed Jekyll blog should be up and running at yourusername.github.io.  
 
 
-# Configuration
-Configuration of Ceevee theme consist of two parts:
-* configuration file (from [skeleton](https://github.com/getgrav/grav-skeleton-ceevee-site/commits?author=hexplor)): "user/config/site.yaml"
-* header variables (inside markdown files)
+## Additional information about some features
+### Hero images and blog layout
+Liquid 'script' which is used to append correct hero image and overlay color as set in post YAML Front matter was written by me and while it's really basic it functions properly.  
+You can read more about it and see the code in `include/utils/hero.html`.
 
-In configuration file you can set basic values for header, footer and general.
-In markdown files, you can manage page content and overall look of the separate section. For example, below is a portfolio.md header section:
+#### Tags & Tags Pages
+Tags and tag pages are supported by using Jekyll's native collections functionality.  
 
-```markdown
-portfolio:
-  - title: "Creative Minds"
-    img: portfolio-01.jpg
-    img_text: View More
-    img_url: "#"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero."
-```
+## Credits
+### Resources used
+- [Helium B4](https://uideck.com/products/helium-ui-kit/)
+- [Font Awesome](http://fontawesome.io/)
+- [Bootstrap 4](https://v4-alpha.getbootstrap.com/)
 
-In above example you can specify title, image, roll over text, url and content for each separate portfolio element.
+### Inspiration and thoughtful code-jacking
+Inspiration and bits of things listed below are present inside dactl's code:
+- [Daktilo](https://github.com/kronik3r/daktilo) - dactl is based on Daktilo and inherits it's one-column layout.
+- [Hydejack](https://github.com/qwtel/hydejack/) - I've learned a lot about Jekyll when I took apart [@qwtel](https://github.com/qwtel/)'s excellent fork of [Hyde](https://github.com/poole/hyde) theme. I embraced his more partials = everything is easier to edit policy. Hydejack theme gave me an idea on how to create hero images liquid scripting, loading google fonts and using rem's/em's and more.
+- [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) - This guy makes awesome themes and writes a lot about Jekyll and it's more obscure use cases on his blog, [Made Mistakes](https://mademistakes.com). Looking through his theme's code - Minimal Mistakes in particular - gave me lot of information about how to build a robust theme and how to make it configurable within `_config.yml`
+- [Trophy](https://github.com/thomasvaeth/trophy-jekyll) - Link border slide animation SASS mixin which I slightly modified to be able to easily change the direction of the animation.
+- Various blog posts about Jekyll and [Stackoverflow](https://www.stackoverflow.com) posts with useful [Liquid](https://github.com/Shopify/liquid) snippets.
 
-Rest of the sections is made in similar approach. Remember to preserve original indentation to avoid issues.
+## License
+All parts of helium Jekyll theme are free to use and abuse under the open-source [MIT license](http://opensource.org/licenses/mit-license.php).
+
+## TO DO
+- [ ] Add Ads Block to home page 
+- [ ] Minimize `.css` in `<head>` and all images for faster load times
+- [ ] 404 page styles
+- [ ] Create hightlight style for code parts
+
+## Help out
+Im [Antonio Trento](https://antoniotrento.github.io) and I'm looking for funds to be able to open my IT development company with many on-site projects, unfortunately they are hardly feasible without collaboration and an economic base.
+
+If you want to contribute you can donate ethereum or bitcoin:
+- [Donate Bitcoins](https://blockchain.info/address/1B9rDoFCndbsKXL9QiefUcUGUbJH9Y1i6M)
