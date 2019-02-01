@@ -329,10 +329,15 @@ nav ul li a {
   max-width: 100%;
   max-height: 300px;
   object-fit: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin-top: 25px;
+}
+
+.div-img-bg-clean{
+  height: 100%;
+}
+
+.about-img-clean {
+  height: 100%;
 }
 
 #about a {
