@@ -325,11 +325,19 @@ nav ul li a {
   padding-bottom: 20px;
 }
 
+#about .div-img-bg-clean .about-img-clean {
+  /*for center aligning the img in the project section both
+  verticle and horizontal */
+  height: 100%;
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+}
+
 #about .div-img-bg-clean .about-img-clean img {
   max-width: 100%;
   max-height: 300px;
   object-fit: cover;
-  margin-top: 25px;
 }
 
 .div-img-bg-clean{
