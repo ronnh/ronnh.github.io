@@ -30,7 +30,7 @@ $(document).ready(function() {
     $('html, body').stop().animate({
       'scrollTop': target.offset().top - 80
     }, 500, 'swing', function() {
-      window.location.hash = target.selector;
+      //window.location.hash = target.selector;
       $(document).on("scroll", onScroll);
     });
   });
